@@ -24,11 +24,9 @@ abstract class Weapon {
     public void setAttackValue(int attackValue) {
         this.attackValue = attackValue;
     }
+    public abstract void attack();
+    public abstract void specialAttack();
 
-    public void specialAttack(){
-        System.out.println("Special Attack!");
-        // Implement special attack logic here
-    }
     @Override
     public String toString() {
         return "Weapon{" +

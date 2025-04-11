@@ -16,7 +16,7 @@ public class Hero {
     public Hero(){
         this.name = "Hero";
         this.health = 100;
-        this.armor = new Armor();
+        this.armor = new Armor("Naked", 0);
         this.weapon = null;
     }
     public String getName() {
@@ -50,7 +50,7 @@ public class Hero {
                 ", health=" + health +
                 ", armor=" + armor +
                 ", weapon=" + weapon +
-                '}';
+                '}' + '\n';
     }
     
 }

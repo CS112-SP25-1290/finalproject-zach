@@ -26,6 +26,14 @@ public Sword() {
         this.attackBonus = 5;
         this.armorPenetration = 2;
     }
+public void attack() {
+        System.out.println("Sword Attack!");
+        // Implement sword attack logic here
+    }
+public void specialAttack() {
+        System.out.println("Sword Special Attack!");
+        // Implement sword special attack logic here
+    }
 @Override
 public String toString() {
         return "Sword{" +
