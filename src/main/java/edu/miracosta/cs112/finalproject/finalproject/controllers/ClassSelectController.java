@@ -84,7 +84,11 @@ public class ClassSelectController {
                 this.player = new Ranger("Ranger", 100, new Armor("Worn Clothes", 2), new Bow("Old Bow", 5, "Normal", 2));
             }
 
-            levelSelectController.loadPlayer(this.player);
+            try{
+                levelSelectController.loadPlayer(this.player);
+            }catch(NullClassException e){
+                System.out.println(e.getMessage());
+            }
 
             try {
                 
