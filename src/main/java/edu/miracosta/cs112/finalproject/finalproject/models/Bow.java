@@ -33,10 +33,6 @@ public class Bow extends Weapon {
         return damage;
 
     }
-    public void specialAttack() {
-        // TODO Auto-generated method stub
-        
-    }
 
     public int getDefenceBonus(){
         return this.defenseBonus;

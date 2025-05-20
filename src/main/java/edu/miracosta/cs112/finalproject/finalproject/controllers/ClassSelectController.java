@@ -1,6 +1,7 @@
 package edu.miracosta.cs112.finalproject.finalproject.controllers;
 import edu.miracosta.cs112.finalproject.finalproject.*;
 import edu.miracosta.cs112.finalproject.finalproject.models.*;
+import edu.miracosta.cs112.finalproject.finalproject.Exceptions.*;
 
 
 import javafx.stage.Stage;
@@ -85,6 +86,7 @@ public class ClassSelectController {
             }
 
             try{
+                if(this.player == null){ throw new NullClassException("Player is null! Unexpected behavior may follow."); }
                 levelSelectController.loadPlayer(this.player);
             }catch(NullClassException e){
                 System.out.println(e.getMessage());

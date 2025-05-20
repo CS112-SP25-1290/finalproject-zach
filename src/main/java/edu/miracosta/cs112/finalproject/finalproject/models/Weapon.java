@@ -28,6 +28,9 @@ abstract class Weapon {
         return this;
     }
 
+    abstract int attack(Enemy enemy);
+
+
     @Override
     public String toString() {
         return "Weapon{" +
